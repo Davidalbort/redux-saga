@@ -1,40 +1,23 @@
 import { Character } from '../components/Character';
 import { Header} from '../containers/Header';
 import { Button } from '../components/Button';
-const stateInitial ={
-  
-    "id": 2,
-    "name": "Morty Smith",
-    "status": "Alive",
-    "species": "Human",
-    "type": "",
-    "gender": "Male",
-    "origin": {
-      "name": "Earth",
-      "url": "https://rickandmortyapi.com/api/location/1"
-    },
-    "location": {
-      "name": "Earth",
-      "url": "https://rickandmortyapi.com/api/location/20"
-    },
-    "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
-    "episode": [
-      "https://rickandmortyapi.com/api/episode/1",
-      "https://rickandmortyapi.com/api/episode/2",
-      // ...
-    ],
-    "url": "https://rickandmortyapi.com/api/character/2",
-    "created": "2017-11-04T18:50:21.651Z"
-  
-}
+import { useDispatch, useSelector } from 'react-redux';
+import { initCharacter } from '../actions';
+
 const Layout = () => {
+    const state = useSelector(state => state);
+    const dispatch = useDispatch();
     const handleGenarate = () => {
-        console.log('Soy el boton generate')
+        dispatch(initCharacter());
       }
+      console.log(state.length,state)
     return(
         <div>
             <Header />
-            <Character character={stateInitial} />
+            <Character character={state} />
+            { state.length === 0 ? <div>
+                No se ha generado ninguna peticion, selecciona el boton generate para traer un caracter...
+            </div>: null}
             <Button handleClick={handleGenarate}/>
         </div>
     )
