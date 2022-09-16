@@ -3,6 +3,7 @@ import { Header} from '../containers/Header';
 import { Button } from '../components/Button';
 import { useDispatch, useSelector } from 'react-redux';
 import { initCharacter } from '../actions';
+import styles from '../styles/containers/layout.module.scss';
 
 const Layout = () => {
     const state = useSelector(state => state);
@@ -12,7 +13,7 @@ const Layout = () => {
       }
       console.log(state.length,state)
     return(
-        <div>
+        <div className={styles.container}>
             <Header />
             <Character character={state} />
             { state.length === 0 ? <div>

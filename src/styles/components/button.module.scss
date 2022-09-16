@@ -1,0 +1,16 @@
+@import '../abstracs/colors.scss';
+
+.container{
+    margin: 2rem 4rem;
+    width: clamp(8rem,23.5vw,20rem);
+    font-size: clamp(1.2rem,2.5vw,2.2rem);
+    color: $primary_blue;
+    border: solid 0.15rem $primary_blue;
+    border-radius: 1.2rem;
+    background-color: transparent;
+    &:hover{
+        cursor: pointer;
+        background-color: $primary_blue;
+        color: white;
+    }
+}

@@ -1,9 +1,9 @@
 import React from "react";
-// import { StyledSection } from "../../styles/components/CharacterItem";
+import styles from '../styles/components/character.module.scss';
 
 const Character = ({character}) => {
             return(
-                <main>
+                <main className={styles.container}>
                     {character.map(character =>(
 
                     <div key={character.id}>

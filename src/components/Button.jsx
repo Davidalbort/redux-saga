@@ -1,7 +1,7 @@
-
+import styles from '../styles/components/button.module.scss';
 const Button = ({handleClick}) => {
     return(
-        <button onClick={handleClick}>
+        <button className={styles.container} onClick={handleClick}>
             GENERATE
         </button>
     )

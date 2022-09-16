@@ -1,0 +1,32 @@
+@import '../abstracs/colors.scss';
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 1rem;
+    background-color: white;
+    font-size: 1rem;
+    color: $primary_header;
+    border-bottom: solid 0.1rem;
+    & > div{
+        
+        & > h1{
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        
+    }
+}
+
+.logoContainer{
+    display: flex;
+}
+.logo{
+    img{
+        width: 10rem;
+    }
+}
