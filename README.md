@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# `Introduction`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ *  This project was created with react js, creating the components with atomic design methodology, styling with module component format, handling the data flow with redux-react, and the asynchronous requests with redux-saga and axios for the API request. The styling was created with mobile first in mind, this was done without media query to avoid rewriting the styling code.
 
-## Available Scripts
+ * This app consists of bringing some characters from the Api Rick and Morty, for it generates a random number according to the amount of characters that has that database, then requests the information to the Api and finally renders all the information on the DOM. So that all this functionality happens, in the app there is a button called "Generate", when we click it the functionality described above will occur.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# `Development process`
 
-### `npm test`
+* Read and analyze documentation (challenge)
+* Learn how to handle redux-saga with redux.
+* Create the CRUD services for the consumption of web services and perform functional tests.
+* Sketch the application interface.
+* Creation of components, containers and home page to structure the application with semantic HTML, all taking into account the Atomic Design methodology.
+* The logic of each component was made with redux, creating the necessary actions to update the state, finally a provaider was created so that all the information is in the whole app.
+* With redux-saga we managed the asynchronous actions that allowed requesting information to the Api.
+* The design was made taking into account the mobile first, this proposal was taken into account to not use mediaQueri. 
+* Creation of styles for components and containers with style module, in order to have a functional and aesthetic design.
+* The necessary tags were added to have a good SEO performance.
+* Some integration and untitle tests were performed on the components and containers.
+* Finally the documentation of the respective App was done.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-Documentation of the whole path.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Available Scripts
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* In the project directory, you can run:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ ## `Getting Started`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* First type on terminal
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm i
+```
 
-## Learn More
+* Second, run the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm run start
+```
